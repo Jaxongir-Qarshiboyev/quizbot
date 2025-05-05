@@ -1,0 +1,3237 @@
+JavaScript-da o‘zgaruvchi e’lon qilishning qaysi usuli noto‘g‘ri?
+====
+var x = 10
+====
+let y = 20
+====
+const z = 30
+====
+#variable a = 40
+
++++++
+
+const bilan e’lon qilingan o‘zgaruvchini o‘zgartirish mumkinmi?
+====
+Ha, har qanday sharoitda
+====
+#Yo‘q, qiymat doim o‘zgarmas bo‘ladi
+====
+Faqat agar u obyekt bo‘lsa
+====
+Faqat agar u massiv bo‘lsa
+
++++++
+
+JavaScript-da ma’lumot turlaridan qaysi biri primitiv emas?
+====
+Number
+====
+String
+====
+Boolean
+====
+#Object
+
++++++
+
+Quyidagi kod natijasi nima bo‘ladi? console.log(typeof null);
+====
+"null"
+====
+#"object"
+====
+"undefined"
+====
+"number"
+
++++++
+
+JavaScript-da funksiya qanday e’lon qilinadi?
+====
+#function myFunction() {}
+====
+def myFunction() {}
+====
+fun myFunction() {}
+====
+define myFunction() {}
+
++++++
+
+Quyidagi kod natijasi nima bo‘ladi? console.log(2 + "2");
+====
+4
+====
+#"22"
+====
+NaN
+====
+Error
+
++++++
+
+JavaScript-da massiv qanday yaratiladi?
+====
+let arr = {}
+====
+let arr = ()
+====
+#let arr = []
+====
+let arr = <>
+
++++++
+
+Quyidagi kod natijasi nima bo‘ladi? let x; console.log(x);
+====
+null
+====
+#undefined
+====
+0
+====
+NaN
+
++++++
+
+Quyidagi kod natijasida y ning qiymati qanday bo‘ladi? let y = "10" - 5; console.log(y);
+====
+"105"
+====
+NaN
+====
+#5
+====
+"10-5"
+
++++++
+
+JavaScript-da === va == operatorlari farqi nima?
+====
+Hech qanday farq yo‘q
+====
+#=== ma’lumot turini ham tekshiradi, == esa yo‘q
+====
+== ma’lumot turini tekshiradi, === esa yo‘q
+====
+=== faqat raqamlarni taqqoslash uchun ishlatiladi
+
++++++
+
+Quyidagi kod natijasi nima bo‘ladi? let a = "5"; let b = 5; console.log(a == b);
+====
+false
+====
+#true
+====
+Error
+====
+NaN
+
++++++
+
+Quyidagi kod natijasi nima bo‘ladi? let x = 10; let y = x++; console.log(y);
+====
+11
+====
+NaN
+====
+Error
+====
+#10
+
++++++
+
+JavaScript-da obyekt xususiyatini qanday o‘qish mumkin?
+====
+obj[xususiyat]
+====
+obj->xususiyat
+====
+#obj.xususiyat
+====
+obj:xususiyat
+
++++++
+
+JavaScript-da massiv uzunligini qanday aniqlash mumkin?
+====
+arr.length()
+====
+#arr.length
+====
+arr.size
+====
+arr.count
+
++++++
+
+Quyidagi kod qanday natija chiqaradi? let x = 5; console.log(x > 3 ? "Katta" : "Kichik");
+====
+"Kichik"
+====
+#"Katta"
+====
+NaN
+====
+Error
+
++++++
+
+Qaysi metod foydalanuvchiga ogohlantirish xabarini chiqarish uchun ishlatiladi?
+====
+console.log()
+====
+#alert()
+====
+prompt()
+====
+console.error()
+
++++++
+
+prompt() metodi qanday ma'lumot qaytaradi?
+====
+Har doim raqam
+====
+#Har doim matn (string)
+====
+Boolean qiymat
+====
+Hech qanday qiymat qaytarmaydi
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(typeof prompt("Ismingizni kiriting:"));
+====
+"number"
+====
+"boolean"
+====
+#"string"
+====
+"undefined"
+
++++++
+
+console.error() qanday maqsadda ishlatiladi?
+====
+Ogohlantirish chiqarish uchun
+====
+Foydalanuvchidan ma’lumot olish uchun
+====
+#Xato xabari chiqarish uchun
+====
+Xotirani tozalash uchun
+
++++++
+
+alert() metodi qanday ma’lumot qaytaradi?
+====
+Boolean qiymat
+====
+String qiymat
+====
+#Hech qanday qiymat qaytarmaydi (undefined)
+====
+Number qiymat
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(typeof Number("123"));
+====
+#"number"
+====
+"string"
+====
+"object"
+====
+"undefined"
+
++++++
+
+Number("hello") natijasi qanday bo‘ladi?
+====
+0
+====
+#NaN
+====
+"hello"
+====
+Xatolik yuz beradi
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? let x = "42"; let y = Number(x); console.log(typeof y);
+====
+#"number"
+====
+"string"
+====
+"boolean"
+====
+"undefined"
+
++++++
+
+toString() metodining vazifasi nima?
+====
+#Sodni matn ko‘rinishiga o‘tkazish
+====
+Matnni son ko‘rinishiga o‘tkazish
+====
+Matn uzunligini aniqlash
+====
+Hech qanday vazifasi yo‘q
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? let num = 100; let strNum = num.toString(); console.log(typeof strNum);
+====
+"number"
+====
+#"string"
+====
+"boolean"
+====
+"undefined"
+
++++++
+
+Quyidagi kod qanday natija chiqaradi? console.log(Number("10") + Number("20"));
+====
+"1020"
+====
+#30
+====
+NaN
+====
+"30"
+
++++++
+
+parseInt("12.5") natijasi qanday bo‘ladi?
+====
+12.5
+====
+#12
+====
+13
+====
+NaN
+
++++++
+
+parseFloat("12.5px") natijasi qanday bo‘ladi?
+====
+12
+====
+#12.5
+====
+"12.5px"
+====
+NaN
+
++++++
+
+console.log(alert("Salom!")); kodining natijasi qanday bo‘ladi?
+====
+"Salom!" konsolga chiqadi
+====
+#Brauzerda xabar chiqadi va konsolda undefined chiqariladi
+====
+Xatolik yuz beradi
+====
+Hech qanday natija bo‘lmaydi
+
++++++
+
+isNaN("123") natijasi qanday bo‘ladi?
+====
+true
+====
+#false
+====
+NaN
+====
+123
+
++++++
+
+JavaScriptda qo‘shish operatori qaysi?
+====
+-
+====
+*
+====
+#+
+====
+/
+
++++++
+
+JavaScriptda qaysi operator darajaga oshirish uchun ishlatiladi?
+====
+%
+====
+#**
+====
+//
+====
+^
+
++++++
+
+5 % 2 ifodasi qanday natija qaytaradi?
+====
+2
+====
+#1
+====
+0
+====
+5
+
++++++
+
+=== operatorining vazifasi nima?
+====
+Qiymatlarni solishtirish
+====
+#Qiymat va turini taqqoslash
+====
+Qiymatlarni ayirish
+====
+Sonlarni bo‘lish
+
++++++
+
+Quyidagilardan qaysi taqqoslash operatori emas?
+====
+!=
+====
+>=
+====
+#&&
+====
+<
+
++++++
+
+JavaScriptda || operatori qanday ishlaydi?
+====
+Ikkala shart bajarilganda true qaytaradi
+====
+Hech qaysi shart bajarilmasa true qaytaradi
+====
+#Kamida bittasi true bo‘lsa, true qaytaradi
+====
+Faqat false qiymatlar uchun ishlaydi
+
++++++
+
+10 != 5 ifodasi qanday natija qaytaradi?
+====
+#true
+====
+false
+====
+null
+====
+undefined
+
++++++
+
+false && true natijasi qanday bo‘ladi?
+====
+true
+====
+#false
+====
+null
+====
+undefined
+
++++++
+
+true || false natijasi qanday bo‘ladi?
+====
+false
+====
+null
+====
+#true
+====
+undefined
+
++++++
+
+!true ifodasi qanday natija qaytaradi?
+====
+true
+====
+#false
+====
+null
+====
+undefined
+
++++++
+
+7 >= 7 ifodasi qanday natija qaytaradi?
+====
+#true
+====
+false
+====
+null
+====
+undefined
+
++++++
+
+2 * 3 + 4 / 2 ifodasi qanday natija qaytaradi?
+====
+#10
+====
+5
+====
+8
+====
+6
+
++++++
+
+typeof 42 ifodasi qanday natija qaytaradi?
+====
+#"number"
+====
+"string"
+====
+"boolean"
+====
+"object"
+
++++++
+
+5 === '5' ifodasi qanday natija qaytaradi?
+====
+true
+====
+#false
+====
+undefined
+====
+null
+
++++++
+
+0 == false ifodasi qanday natija qaytaradi?
+====
+#true
+====
+false
+====
+null
+====
+undefined
+
++++++
+
+If operatori qachon bajariladi?
+====
+Har doim bajariladi
+====
+Shart noto‘g‘ri bo‘lsa
+====
+#Shart to‘g‘ri bo‘lsa
+====
+Kod bajarilishiga ta’sir qilmaydi
+
++++++
+
+Quyidagi kod natijasini toping: let yosh = 18; if (yosh > 18) { console.log("Voyaga yetgan"); } else { console.log("Voyaga yetmagan"); }
+====
+Voyaga yetgan
+====
+#Voyaga yetmagan
+====
+Xatolik yuz beradi
+====
+Ekranga hech narsa chiqmaydi
+
++++++
+
+If-else operatoridan nima maqsadda foydalaniladi?
+====
+#Shart bajarilgan yoki bajarilmagan holatda turli natijalar olish uchun
+====
+Har doim bir xil natijani chiqarish uchun
+====
+Tsikllarni tashkil qilish uchun
+====
+Faqat rost shartlarni tekshirish uchun
+
++++++
+
+Ternary operator qanday ishlaydi?
+====
+#If-else o‘rnini bosuvchi qisqartirilgan shart tekshirish usuli
+====
+Har doim kodni murakkablashtiradi
+====
+Faqat sanash operatsiyalarida ishlatiladi
+====
+Undefined qiymat qaytaradi
+
++++++
+
+Quyidagi kod natijasini toping: let son = -5; let natija = (son >= 0) ? "Musbat" : "Manfiy"; console.log(natija);
+====
+Musbat
+====
+#Manfiy
+====
+Xatolik yuz beradi
+====
+Ekranga hech narsa chiqmaydi
+
++++++
+
+If-else if-else operatori nima uchun ishlatiladi?
+====
+Faqat ikkita holatni tekshirish uchun
+====
+#Bir nechta shartlarni ketma-ket tekshirish uchun
+====
+Dastur kodini kamaytirish uchun
+====
+Har qanday kodni ishlatish uchun
+
++++++
+
+Quyidagi kod natijasini toping: let vaqt = 15; if (vaqt < 12) { console.log("Xayrli tong!"); } else if (vaqt < 18) { console.log("Xayrli kun!"); } else { console.log("Xayrli kech!"); }
+====
+Xayrli tong!
+====
+#Xayrli kun!
+====
+Xayrli kech!
+====
+Xatolik yuz beradi
+
++++++
+
+If-else blokida else bo‘lishi shartmi?
+====
+Ha, har doim kerak
+====
+#Yo‘q, faqat zarur holatda yoziladi
+====
+JavaScript else ni qo‘llab-quvvatlamaydi
+====
+Faqat tsikllarda ishlatiladi
+
++++++
+
+Ternary operator yordamida 0 dan katta sonni tekshirish qanday yoziladi?
+====
+#(son > 0) ? "Musbat" : "Manfiy"
+====
+if (son > 0) { "Musbat" } else { "Manfiy" }
+====
+son > 0 = "Musbat" : "Manfiy"
+====
+if-else dan foydalanish shart
+
++++++
+
+Quyidagi kod natijasini toping: let qiymat = 0; if (qiymat) { console.log("Rost"); } else { console.log("Yolg‘on"); }
+====
+Rost
+====
+#Yolg‘on
+====
+Xatolik yuz beradi
+====
+Hech narsa chiqmaydi
+
++++++
+
+Ternary operator qaysi turdagi qiymat qaytaradi?
+====
+Faqat sonlar
+====
+Faqat satrlar
+====
+#Har qanday turdagi qiymat
+====
+JavaScriptda bunday operator yo‘q
+
++++++
+
+If-else orqali qaysi shartlar tekshiriladi?
+====
+Faqat raqamli shartlar
+====
+#Matn, raqam va boolean shartlar
+====
+Faqat matnli shartlar
+====
+If faqat haqiqiy sonlarni tekshiradi
+
++++++
+
+Quyidagi kod qanday natija chiqaradi? let havo = "quyoshli"; if (havo === "yomg‘irli") { console.log("Soyabon oling"); } else { console.log("Sayrga chiqing"); }
+====
+Soyabon oling
+====
+#Sayrga chiqing
+====
+Xatolik yuz beradi
+====
+Hech qanday natija chiqmaydi
+
++++++
+
+If sharti noto‘g‘ri bo‘lsa, kod qanday harakat qiladi?
+====
+If bloki bajariladi
+====
+#If bloki o‘tkazib yuboriladi
+====
+Kod xatolik chiqaradi
+====
+JavaScript kodni o‘chirib yuboradi
+
++++++
+
+Quyidagi ternary operator natijasini toping: let yosh = 25; let natija = (yosh >= 18) ? "Voyaga yetgan" : "Voyaga yetmagan"; console.log(natija);
+====
+#Voyaga yetgan
+====
+Voyaga yetmagan
+====
+Xatolik yuz beradi
+====
+Hech narsa chiqmaydi
+
++++++
+
+Quyidagi kodning natijasi nima bo‘ladi? for (let i = 0; i < 3; i++) { console.log(i); }
+====
+1 2 3
+====
+#0 1 2
+====
+0 1 2 3
+====
+1 2
+
++++++
+
+JavaScriptda while siklining to‘g‘ri sintaksisi qaysi?
+====
+while { i < 10; i++ }
+====
+#while (i < 10) { i++; }
+====
+while i < 10 ( i++ ) {}
+====
+do while(i < 10) {}
+
++++++
+
+do...while siklining farqi nimada?
+====
+Shart bajarilmasa ham hech qachon ishlamaydi
+====
+#Avval kod bajarilib, so‘ng shart tekshiriladi
+====
+do...while sikli mavjud emas
+====
+Har doim kamida ikki marta ishlaydi
+
++++++
+
+Quyidagi kodning natijasi nima bo‘ladi? let i = 3; while (i > 0) { console.log(i); i--; }
+====
+1 2 3
+====
+#3 2 1
+====
+3 2
+====
+2 1
+
++++++
+
+for...in operatori nima uchun ishlatiladi?
+====
+Massiv elementlarini aylantirish uchun
+====
+#Obyekt xususiyatlarini aylantirish uchun
+====
+Faqat string qiymatlar bilan ishlash uchun
+====
+Sonlar bilan ishlash uchun
+
++++++
+
+for...of operatori nima uchun ishlatiladi?
+====
+Obyekt xususiyatlarini aylantirish uchun
+====
+#Massiv elementlarini aylantirish uchun
+====
+Faqat stringlar bilan ishlaydi
+====
+Har doim cheksiz sikl hosil qiladi
+
++++++
+
+switch operatorida break kalit so‘zi nima uchun ishlatiladi?
+====
+Kodni ishlashini tezlashtirish uchun
+====
+#case blokidan chiqish uchun
+====
+Har doim kerak emas
+====
+Switch operatorida break mavjud emas
+
++++++
+
+Quyidagi kodning natijasi nima bo‘ladi? let x = 2; switch (x) { case 1: console.log("Bir"); break; case 2: console.log("Ikki"); break; default: console.log("Boshqa son"); }
+====
+"Bir"
+====
+#"Ikki"
+====
+"Boshqa son"
+====
+Xatolik bo‘ladi
+
++++++
+
+Quyidagi kodda xatolik nimada? switch (num) { case 1: console.log("Bir"); case 2: console.log("Ikki"); }
+====
+switch operatori noto‘g‘ri yozilgan
+====
+#break yetishmayapti
+====
+case qiymatlari noto‘g‘ri
+====
+switch ishlamaydi
+
++++++
+
+while (true) {} kodining natijasi qanday bo‘ladi?
+====
+#Cheksiz sikl
+====
+Xato xabar chiqadi
+====
+Kod ishlamaydi
+====
+1 marta bajarilib, to‘xtaydi
+
++++++
+
+for siklida boshi va oxiri qanday belgilanadi?
+====
+#for (boshlash; shart; o‘zgarish)
+====
+for { boshlash, shart, o‘zgarish }
+====
+for boshlash; shart; o‘zgarish
+====
+for [boshlash; shart; o‘zgarish]
+
++++++
+
+switch operatori qanday o‘zgaruvchi turlarini qabul qiladi?
+====
+Faqat sonlar
+====
+Faqat stringlar
+====
+#Har qanday o‘zgaruvchi
+====
+Faqat obyektlar
+
++++++
+
+for...in va for...of farqi nimada?
+====
+Ikkalasi ham bir xil ishlaydi
+====
+#for...in obyektdagi xususiyatlarni, for...of massiv elementlarini aylanadi
+====
+for...in va for...of faqat massivlar bilan ishlaydi
+====
+for...of faqat string qiymatlar bilan ishlaydi
+
++++++
+
+do...while sikli qachon while siklidan foydaliroq?
+====
+Agar shart dastlab false bo‘lsa, kod hech qachon ishlamaydi
+====
+#Agar sikl kamida bir marta bajarilishi kerak bo‘lsa
+====
+Agar sonlar bilan ishlash kerak bo‘lsa
+====
+Har doim while dan foydalangan ma’qul
+
++++++
+
+Quyidagi kodda natija qanday bo‘ladi? let sum = 0; for (let i = 1; i <= 5; i++) { sum += i; } console.log(sum);
+====
+5
+====
+10
+====
+#15
+====
+20
+
++++++
+
+Funksiya qanday yoziladi?
+====
+func myFunc() {}
+====
+#function myFunc() {}
+====
+def myFunc() {}
+====
+let function myFunc() {}
+
++++++
+
+JavaScriptda funksiyalar qanday turga bo‘linadi?
+====
+#Function Declaration, Function Expression, Arrow Function
+====
+Class Function, Object Function, Variable Function
+====
+Static Function, Dynamic Function, Lambda Function
+====
+Public Function, Private Function, Protected Function
+
++++++
+
+Function Declaration xususiyati nima?
+====
+Funksiya o‘zgaruvchiga saqlanadi
+====
+Funksiya anonim bo‘lishi kerak
+====
+#Funksiya oldin chaqirilishi mumkin
+====
+Funksiya faqat obyekt ichida ishlaydi
+
++++++
+
+Quyidagi kod nima chiqaradi? console.log(salomBer("Ali")); function salomBer(ism) { return "Salom, " + ism + "!"; }
+====
+#Salom, Ali!
+====
+Xato chiqadi
+====
+Undefined
+====
+Error: Function is not defined
+
++++++
+
+Function Expression qanday ishlaydi?
+====
+#Funksiya o‘zgaruvchiga saqlanadi va faqat e’lon qilingandan keyin chaqirilishi mumkin
+====
+Funksiya avtomatik ravishda ishlaydi
+====
+Funksiya har doim global miqyosda bo‘ladi
+====
+Funksiya faqat obyekt ichida ishlaydi
+
++++++
+
+Quyidagi kodda nima xato? console.log(salomBer("Ali")); const salomBer = function(ism) { return "Salom, " + ism + "!"; };
+====
+Xato yo‘q, ishlaydi
+====
+salomBer e’lon qilinmagan
+====
+#Function hoisting ishlamaydi
+====
+const bilan funksiya yaratib bo‘lmaydi
+
++++++
+
+Quyidagi kodda qaysi natija chiqadi? const kvadrat = son => son * son; console.log(kvadrat(4));
+====
+4
+====
+8
+====
+#16
+====
+NaN
+
++++++
+
+Arrow function qanday yoziladi?
+====
+#=> belgisi orqali
+====
+-> belgisi orqali
+====
+lambda operatori bilan
+====
+: orqali
+
++++++
+
+Quyidagi kodning natijasi qanday bo‘ladi? const salomBer = ism => "Salom, " + ism + "!"; console.log(salomBer("Vali"));
+====
+#"Salom, Vali!"
+====
+"undefined"
+====
+Xato beradi
+====
+"Salom,"
+
++++++
+
+Quyidagi kod this qanday ishlaydi? const obj = { ism: "Ali", salom: () => { console.log("Salom, " + this.ism); } }; obj.salom();
+====
+#"Salom, undefined"
+====
+"Salom, Ali"
+====
+"Salom, null"
+====
+"Salom, obj"
+
++++++
+
+Funksiya chaqirishning to‘g‘ri usuli qaysi?
+====
+call myFunction()
+====
+#myFunction()
+====
+execute myFunction
+====
+run myFunction()
+
++++++
+
+Quyidagi kod qanday natija chiqaradi? const multiply = (a, b = 2) => a * b; console.log(multiply(3));
+====
+#6
+====
+3
+====
+NaN
+====
+Error
+
++++++
+
+Callback funksiyalar qanday ishlaydi?
+====
+#Boshqa funksiya ichida funksiya sifatida ishlaydi
+====
+Har doim avtomatik ravishda chaqiriladi
+====
+Faqat Function Declaration bilan ishlaydi
+====
+Faqat setTimeout bilan ishlaydi
+
++++++
+
+Quyidagi kodni to‘ldiring: const add = (a, b) => ____;
+====
+{ return a + b; }
+====
+#a + b
+====
+(a + b) =>
+====
+return (a + b)
+
++++++
+
+Quyidagi kod qanday natija chiqaradi? function myFunc(a, b, c) { return a + b + c; } console.log(myFunc(1, 2));
+====
+3
+====
+#NaN
+====
+Undefined
+====
+Error
+
++++++
+
+JavaScriptda obyekt qanday yaratiladi?
+====
+let obj = new Array()
+====
+#let obj = {}
+====
+let obj = createObject()
+====
+let obj = Object.create()
+
++++++
+
+Qaysi usul obyektning barcha kalitlarini olish uchun ishlatiladi?
+====
+#Object.keys(obj)
+====
+Object.values(obj)
+====
+Object.entries(obj)
+====
+Object.get(obj)
+
++++++
+
+Quyidagi kod natijasini toping: let user = { name: "Ali" }; console.log(user.age);
+====
+#undefined
+====
+null
+====
+Error
+====
+0
+
++++++
+
+this kalit so‘zi obyekt ichida qanday ishlaydi?
+====
+Global obyektni ifodalaydi
+====
+#Obyekt ichidagi metodlarda obyektning o‘ziga murojaat qiladi
+====
+Har doim window obyektini bildiradi
+====
+Funksiya ichida doim undefined qaytaradi
+
++++++
+
+Konstruktor funksiyalar qanday chaqiriladi?
+====
+let user = User("Ali", 25)
+====
+#let user = new User("Ali", 25)
+====
+let user = create User("Ali", 25)
+====
+let user = User.new("Ali", 25)
+
++++++
+
+Obyektga yangi xususiyat qo‘shishning to‘g‘ri usuli qaysi?
+====
+obj -> key = value
+====
+#obj.key = value
+====
+addProperty(obj, key, value)
+====
+obj.add(key, value)
+
++++++
+
+Quyidagi kod natijasini toping: let car = { brand: "Toyota" }; delete car.brand; console.log(car.brand);
+====
+"Toyota"
+====
+null
+====
+#undefined
+====
+Error
+
++++++
+
+Object.entries(obj) qanday natija qaytaradi?
+====
+Obyektning barcha kalitlarini massiv sifatida qaytaradi
+====
+Obyektning barcha qiymatlarini massiv sifatida qaytaradi
+====
+#Har bir kalit-qiymat juftligi bo‘lgan massiv qaytaradi
+====
+Obyektni string formatga o‘giradi
+
++++++
+
+Quyidagi kod natijasini toping: let obj = { a: 1, b: 2 }; console.log(Object.values(obj));
+====
+["a", "b"]
+====
+#[1, 2]
+====
+[[a, 1], [b, 2]]
+====
+{a: 1, b: 2}
+
++++++
+
+new operatorining asosiy vazifasi nima?
+====
+#Yangi obyekt yaratish
+====
+Yangi massiv yaratish
+====
+Funksiya chaqirish
+====
+Yangi metod qo‘shish
+
++++++
+
+Symbol.iterator obyektlar uchun nima qiladi?
+====
+Obyektni massivga aylantiradi
+====
+Obyektni JSON formatga aylantiradi
+====
+#Obyektni for...of bilan ishlatish imkonini beradi
+====
+Obyekt ichidagi metodlarni ro‘yxatga oladi
+
++++++
+
+for...in va for...of farqi nimada?
+====
+#for...in obyekt kalitlari bo‘yicha, for...of esa qiymatlar bo‘yicha aylanadi
+====
+for...in faqat massivlar uchun ishlaydi
+====
+for...of obyekt kalitlari bo‘yicha aylanadi
+====
+for...in va for...of bir xil ishlaydi
+
++++++
+
+Object.freeze(obj) qanday vazifani bajaradi?
+====
+Obyektni o‘chirish
+====
+#Obyektga yangi xususiyat qo‘shishni taqiqlaydi
+====
+Obyektni massivga aylantiradi
+====
+Obyekt metodlarini muzlatadi
+
++++++
+
+Object.assign(target, source) qanday ishlaydi?
+====
+#source obyektni target obyektga nusxalaydi
+====
+target obyektni source ga nusxalaydi
+====
+target obyektni source bilan o‘chiradi
+====
+source obyektni target dan o‘chiradi
+
++++++
+
+Quyidagi kod natijasini toping: let obj1 = { a: 1 }; let obj2 = obj1; obj2.a = 2; console.log(obj1.a);
+====
+1
+====
+#2
+====
+undefined
+====
+Error
+
++++++
+
+Symbol qanday ma’lumot turi?
+====
+O‘zgaruvchan va noyob
+====
+#O‘zgarmas va noyob
+====
+O‘zgaruvchan va takrorlanuvchi
+====
+O‘zgarmas va takrorlanuvchi
+
++++++
+
+JavaScript-da yangi Symbol qanday yaratiladi?
+====
+let sym = new Symbol()
+====
+let sym = Symbol
+====
+#let sym = Symbol()
+====
+let sym = createSymbol()
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? let sym1 = Symbol("test"); let sym2 = Symbol("test"); console.log(sym1 === sym2);
+====
+true
+====
+#false
+====
+undefined
+====
+NaN
+
++++++
+
+Symbol’ni obyekt kaliti sifatida ishlatish qanday amalga oshiriladi?
+====
+obj.Symbol = "value"
+====
+#obj[Symbol("key")] = "value"
+====
+obj = {Symbol: "value"}
+====
+obj(Symbol) = "value"
+
++++++
+
+Symbol obyekt xususiyati sifatida berilganda qanday natija bo‘ladi? let obj = { [Symbol("id")]: 123 }; console.log(Object.keys(obj));
+====
+["id"]
+====
+#[]
+====
+["Symbol(id)"]
+====
+undefined
+
++++++
+
+Symbol.for("key") qanday ishlaydi?
+====
+Har doim yangi Symbol yaratadi
+====
+#Agar oldin yaratilgan bo‘lsa, mavjud Symbol'ni qaytaradi
+====
+Symbol'ning tavsifini o‘zgartiradi
+====
+Faqat mahalliy o‘zgaruvchilar bilan ishlaydi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let sym = Symbol.for("globalKey"); console.log(Symbol.keyFor(sym));
+====
+#"globalKey"
+====
+Symbol("globalKey")
+====
+undefined
+====
+null
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? let sym1 = Symbol.for("key"); let sym2 = Symbol.for("key"); console.log(sym1 === sym2);
+====
+#true
+====
+false
+====
+undefined
+====
+Error
+
++++++
+
+Symbol qanday xususiyatga ega?
+====
+JSON.stringify() orqali obyekt ichidan olinishi mumkin
+====
+#Obyekt xususiyati sifatida ishlatilganda oddiy metodlar bilan ko‘rinmaydi
+====
+String va Number kabi to‘g‘ridan-to‘g‘ri qo‘shib hisoblash mumkin
+====
+Symbol'ni o‘zgartirish mumkin
+
++++++
+
+Obyekt ichidagi barcha Symbol xususiyatlarini qanday olish mumkin?
+====
+Object.getOwnPropertyNames(obj)
+====
+Object.keys(obj)
+====
+#Object.getOwnPropertySymbols(obj)
+====
+obj.getSymbols()
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let sym = Symbol("id"); console.log(sym.description);
+====
+#"id"
+====
+Symbol(id)
+====
+undefined
+====
+null
+
++++++
+
+Symbol’ni qaysi obyekt metodlari orqali olish mumkin emas?
+====
+Object.getOwnPropertySymbols()
+====
+#Object.keys()
+====
+#Object.getOwnPropertyNames()
+====
+Reflect.ownKeys()
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let sym = Symbol("test"); console.log(sym.toString());
+====
+#"Symbol(test)"
+====
+"test"
+====
+Symbol(test)
+====
+undefined
+
++++++
+
+Symbol qanday ishlatilmaydi?
+====
+Obyekt xususiyati sifatida
+====
+Global Symbol sifatida
+====
+Enum yaratishda
+====
+#To‘g‘ridan-to‘g‘ri string bilan qo‘shish
+
++++++
+
+Quyidagi kodda qanday xatolik yuzaga keladi? let sym = Symbol("test"); alert(sym);
+====
+Xato bo‘lmaydi
+====
+Symbol(test) ekranga chiqariladi
+====
+#Cannot convert a Symbol value to a string xatosi
+====
+undefined
+
++++++
+
+JavaScriptda qanday ma’lumot turi raqamlarni ifodalaydi?
+====
+int
+====
+#number
+====
+float
+====
+double
+
++++++
+
+JavaScriptda satrni qanday hosil qilamiz?
+====
+#let str = "Hello"
+====
+let str = <Hello>
+====
+let str = [Hello]
+====
+let str = {Hello}
+
++++++
+
+Quyidagilardan qaysi mantiqiy qiymatni ifodalaydi?
+====
+10
+====
+"true"
+====
+#true
+====
+"false"
+
++++++
+
+Quyidagi ifoda qanday natija qaytaradi? console.log(typeof "123");
+====
+#string
+====
+number
+====
+boolean
+====
+object
+
++++++
+
+Math.random() funktsiyasi qanday qiymat qaytaradi?
+====
+0 va 10 orasidagi butun son
+====
+#0 va 1 orasidagi tasodifiy son
+====
+1 va 100 orasidagi tasodifiy son
+====
+Faqat musbat butun son
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(10 % 3);
+====
+#1
+====
+3
+====
+10
+====
+0
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(Boolean(0));
+====
+true
+====
+#false
+====
+null
+====
+undefined
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log("Hello" + 5);
+====
+#Hello5
+====
+Hello 5
+====
+5Hello
+====
+NaN
+
++++++
+
+Quyidagi operatorlardan qaysi biri darajaga oshirish uchun ishlatiladi?
+====
+^
+====
+#**
+====
+*
+====
+//
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(5 == "5");
+====
+#true
+====
+false
+====
+Error
+====
+undefined
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(5 === "5");
+====
+true
+====
+#false
+====
+Error
+====
+undefined
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? console.log(typeof null);
+====
+null
+====
+#object
+====
+undefined
+====
+string
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(!false);
+====
+false
+====
+#true
+====
+null
+====
+undefined
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(Boolean(" "));
+====
+#true
+====
+false
+====
+null
+====
+undefined
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? console.log(typeof NaN);
+====
+#number
+====
+NaN
+====
+undefined
+====
+null
+
++++++
+
+JavaScriptda array qanday yaratiladi?
+====
+let arr = new Array(1, 2, 3)
+====
+#let arr = [1, 2, 3]
+====
+let arr = {}
+====
+let arr = new Object()
+
++++++
+
+push() metodi qanday ishlaydi?
+====
+Massiv boshiga element qo‘shadi
+====
+#Massiv oxiriga element qo‘shadi
+====
+Elementni o‘chiradi
+====
+Massivni tozalaydi
+
++++++
+
+pop() metodi qanday vazifa bajaradi?
+====
+#Massiv oxiridan elementni olib tashlaydi
+====
+Massiv boshidan elementni olib tashlaydi
+====
+Massivga element qo‘shadi
+====
+Massiv uzunligini aniqlaydi
+
++++++
+
+splice() metodi nima uchun ishlatiladi?
+====
+#Elementlarni o‘chirish yoki qo‘shish
+====
+Elementlarni tartiblash
+====
+Massivni teskari qilish
+====
+Massivni tozalash
+
++++++
+
+slice() metodi qanday natija beradi?
+====
+#Massivni qismlarga ajratadi
+====
+Elementlarni o‘chiradi
+====
+Elementlarni birlashtiradi
+====
+Massivni o‘chiradi
+
++++++
+
+concat() metodi qanday ishlaydi?
+====
+#Massivlarni birlashtiradi
+====
+Massivni bo‘shatadi
+====
+Elementlarni saralaydi
+====
+Elementlarni o‘chiradi
+
++++++
+
+indexOf() metodi qanday natija qaytaradi?
+====
+#Element indeksini
+====
+Elementning qiymatini
+====
+Undefined qiymatni
+====
+Elementni olib tashlaydi
+
++++++
+
+includes() metodi qanday ishlaydi?
+====
+#Element mavjudligini tekshiradi
+====
+Elementni massivdan o‘chiradi
+====
+Massivni qayta tartiblaydi
+====
+Massivni bo‘sh qiladi
+
++++++
+
+reverse() metodi qanday natija beradi?
+====
+#Massivni teskari tartibga soladi
+====
+Massivni tozalaydi
+====
+Elementlarni ajratadi
+====
+Massiv uzunligini qaytaradi
+
++++++
+
+sort() metodi qanday ishlaydi?
+====
+#Massivni alifbo bo‘yicha tartiblaydi
+====
+Massivni kamayish tartibida saralaydi
+====
+Faqat raqamlarni tartiblaydi
+====
+Massivga yangi element qo‘shadi
+
++++++
+
+map() metodi nima qiladi?
+====
+#Massiv elementlariga funksiya qo‘llaydi
+====
+Massivni o‘chiradi
+====
+Massivni tartiblash
+====
+Elementlarni birlashtirish
+
++++++
+
+filter() metodi qanday ishlaydi?
+====
+#Shartga mos kelgan elementlarni qaytaradi
+====
+Massivni o‘zgartiradi
+====
+Massivni to‘liq qaytaradi
+====
+Elementlarni o‘chiradi
+
++++++
+
+reduce() qanday ishlaydi?
+====
+#Massiv elementlarini bitta qiymatga aylantiradi
+====
+Massiv uzunligini o‘zgartiradi
+====
+Massivni qaytaradi
+====
+Elementlarni o‘chiradi
+
++++++
+
+undefined va null o‘rtasidagi farq nima?
+====
+#Undefined o‘zgaruvchiga qiymat berilmagan
+====
+Null bo‘sh qiymatni bildiradi
+====
+Undefined va null bir xil
+====
+Undefined aniq qiymatga ega
+
++++++
+
+length metodi qanday natija qaytaradi?
+====
+#Massiv elementlari sonini
+====
+Massiv oxiridagi elementni
+====
+Massivni aylantiradi
+====
+Massivni bo‘sh qiladi
+
++++++
+
+JavaScriptda massiv qanday belgilanadi?
+====
+{1, 2, 3, 4, 5}
+====
+#[1, 2, 3, 4, 5]
+====
+new Array{1, 2, 3, 4, 5}
+====
+(1, 2, 3, 4, 5)
+
++++++
+
+push() usuli nima qiladi?
+====
+Massivdan oxirgi elementni o‘chiradi
+====
+Massivning boshiga element qo‘shadi
+====
+#Massivning oxiriga element qo‘shadi
+====
+Massivni boshqa massiv bilan birlashtiradi
+
++++++
+
+pop() usuli qanday natija qaytaradi?
+====
+#O‘chirilgan elementni
+====
+Massivning uzunligini
+====
+Bo‘sh massivni
+====
+Hech qanday natija qaytarmaydi
+
++++++
+
+shift() usuli qanday ishlaydi?
+====
+#Massivning boshidan elementni olib tashlaydi
+====
+Massivning oxiridan elementni olib tashlaydi
+====
+Massivning boshiga yangi element qo‘shadi
+====
+Hech qanday o‘zgarish qilmaydi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let arr = [10, 20, 30]; console.log(arr.indexOf(20));
+====
+0
+====
+#1
+====
+2
+====
+-1
+
++++++
+
+splice() usulining vazifasi nima?
+====
+Faqat massivdan element o‘chirish
+====
+Faqat massivga element qo‘shish
+====
+#Element o‘chirish yoki qo‘shish
+====
+Massivni boshqa massiv bilan birlashtirish
+
++++++
+
+slice() usuli qanday ishlaydi?
+====
+Massivni o‘zgartiradi
+====
+#Massivdan nusxa oladi
+====
+Faqat oxirgi elementni o‘chiradi
+====
+Massiv elementlarini almashtiradi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let numbers = [1, 2, 3, 4, 5]; let part = numbers.slice(1, 3); console.log(part);
+====
+[1, 2, 3]
+====
+#[2, 3]
+====
+[3, 4]
+====
+[2, 3, 4]
+
++++++
+
+concat() usuli qanday ishlaydi?
+====
+#Ikkita massivni birlashtiradi
+====
+Faqat raqamli massivlarni birlashtiradi
+====
+Massivning oxiridan element olib tashlaydi
+====
+Massivning boshiga element qo‘shadi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let fruits = ["Olma", "Banan", "Nok"]; console.log(fruits.includes("Shaftoli"));
+====
+true
+====
+#false
+====
+undefined
+====
+0
+
++++++
+
+forEach() usuli nima uchun ishlatiladi?
+====
+Massivni teskari tartibda chiqarish uchun
+====
+#Massivning har bir elementi bo‘yicha funksiya bajarish uchun
+====
+Massiv elementlarini saralash uchun
+====
+Massivni tahlil qilish uchun
+
++++++
+
+map() usuli qanday ishlaydi?
+====
+#Har bir elementni yangisiga o‘zgartirib, yangi massiv yaratadi
+====
+Har bir elementga qo‘shiladi, ammo massiv o‘zgarmaydi
+====
+Massivdan elementlarni o‘chiradi
+====
+Massivning uzunligini o‘zgartiradi
+
++++++
+
+filter() usuli nima qiladi?
+====
+Massivning har bir elementini qayta ishlaydi
+====
+#Massivdan ma’lum shartga mos keladigan elementlarni ajratib oladi
+====
+Massivni teskari tartibda chiqaradi
+====
+Massivdan bir elementni olib tashlaydi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let numbers = [1, 2, 3, 4, 5]; let sum = numbers.reduce((acc, num) => acc + num, 0); console.log(sum);
+====
+10
+====
+#15
+====
+0
+====
+5
+
++++++
+
+join() usuli qanday ishlaydi?
+====
+#Massiv elementlarini bitta satrga aylantiradi
+====
+Massivga yangi element qo‘shadi
+====
+Massivni boshqa massiv bilan birlashtiradi
+====
+Massiv elementlarini kamaytiradi
+
++++++
+
+Map qanday ma'lumot turidir?
+====
+#Kalit-qiymat juftliklarini saqlaydigan ma'lumot tuzilmasi
+====
+Faqat obyektlarni saqlashga mo‘ljallangan tuzilma
+====
+Takrorlanmaydigan qiymatlar to‘plami
+====
+Kalitlarni faqat string sifatida qabul qiluvchi tuzilma
+
++++++
+
+Quyidagi kod natijasini toping: let myMap = new Map(); myMap.set(1, 'Bir'); console.log(myMap.get(1));
+====
+undefined
+====
+null
+====
+#'Bir'
+====
+1
+
++++++
+
+Map obyektida elementni qanday o‘chirish mumkin?
+====
+delete(myMap, key)
+====
+myMap.remove(key)
+====
+#myMap.delete(key)
+====
+myMap.erase(key)
+
++++++
+
+Map elementlari qanday tartibda saqlanadi?
+====
+Kalitlarning ASCII kod tartibida
+====
+#Qo‘shilgan tartibda
+====
+Alfavit bo‘yicha
+====
+Tasodifiy tartibda
+
++++++
+
+Set qanday xususiyatga ega?
+====
+Faqat sonlarni saqlaydi
+====
+#Takrorlanmaydigan qiymatlar to‘plamidir
+====
+Kalit-qiymat juftliklarini saqlaydi
+====
+Kalit sifatida faqat obyekt qabul qiladi
+
++++++
+
+Quyidagi kod natijasini aniqlang: let mySet = new Set(); mySet.add(5); mySet.add(5); console.log(mySet.size);
+====
+0
+====
+#1
+====
+2
+====
+undefined
+
++++++
+
+Set ichida element mavjudligini qanday tekshirish mumkin?
+====
+mySet.get(value)
+====
+#mySet.has(value)
+====
+mySet.includes(value)
+====
+mySet.exists(value)
+
++++++
+
+WeakMap-da kalit sifatida nima ishlatiladi?
+====
+Har qanday turdagi ma'lumot
+====
+#Faqat obyektlar
+====
+String va raqamlar
+====
+Faqat massivlar
+
++++++
+
+WeakMap va WeakSet ning asosiy afzalligi nima?
+====
+Ular katta miqdordagi ma'lumotlarni saqlash uchun mo‘ljallangan
+====
+#Obyektlar avtomatik ravishda xotiradan o‘chiriladi
+====
+Ular tezroq ishlaydi
+====
+Ular barcha turdagi qiymatlarni saqlaydi
+
++++++
+
+WeakSet qanday qiymatlarni saqlaydi?
+====
+Har qanday qiymatlarni
+====
+Kalit-qiymat juftliklarini
+====
+#Faqat obyektlarni
+====
+String va raqamlarni
+
++++++
+
+Map va WeakMap orasidagi asosiy farq nima?
+====
+#WeakMap kalit sifatida faqat obyektlarni qabul qiladi
+====
+WeakMap da kalitlar tartiblangan bo‘ladi
+====
+Map avtomatik chiqindini yig‘maydi
+====
+Map dan faqat katta loyihalarda foydalanish mumkin
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let weakMap = new WeakMap(); let obj = {id: 1}; weakMap.set(obj, 'data'); obj = null;
+====
+weakMap hali ham 'data' qiymatini saqlaydi
+====
+#'data' avtomatik o‘chiriladi
+====
+obj qiymati o‘zgarishsiz qoladi
+====
+Xatolik yuz beradi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? let set = new Set([1, 2, 3, 2, 1]); console.log(set.size);
+====
+5
+====
+#3
+====
+2
+====
+undefined
+
++++++
+
+WeakSet ning asosiy xususiyati nima?
+====
+Har qanday qiymatlarni qabul qiladi
+====
+#Xotiradan avtomatik tozalanadi
+====
+To‘g‘ri tartibda saqlanadi
+====
+Kalit-qiymat juftliklari bilan ishlaydi
+
++++++
+
+Map obyekti qanday metodlarni taqdim etadi?
+====
+.push(), .pop()
+====
+.add(), .remove()
+====
+#.set(), .get(), .delete(), .has()
+====
+.concat(), .slice()
+
++++++
+
+JavaScriptda Object nima?
+====
+Qiymatlarni indeks orqali saqlovchi tuzilma
+====
+#Kalit-qiymat juftliklarini saqlovchi tuzilma
+====
+Faqat funksiyalarni o‘z ichiga olgan tuzilma
+====
+JavaScript dasturining bajarilish vaqtini tezlashtiruvchi vosita
+
++++++
+
+Quyidagi kodning natijasi nima? let obj = {ism: "Ali", yosh: 25}; console.log(obj.ism);
+====
+#"Ali"
+====
+yosh
+====
+undefined
+====
+ism
+
++++++
+
+JavaScriptda yangi ob'ekt yaratishning to‘g‘ri usuli qaysi?
+====
+#let obj = new Object();
+====
+let obj = Object.new();
+====
+let obj = ({});
+====
+let obj = new {};
+
++++++
+
+Quyidagi kod qaysi usul bilan qiymatga murojaat qilishga misol? console.log(obj["ism"]);
+====
+Nuqta notatsiyasi
+====
+#Qavs notatsiyasi
+====
+Funksiya chaqiruv usuli
+====
+Dinamik notatsiya
+
++++++
+
+JavaScriptda ob'ekt ichidagi mavjud qiymatni o‘zgartirish usuli qaysi?
+====
+#obj.yosh = 30;
+====
+obj.yosh(30);
+====
+obj["yosh"]: 30;
+====
+obj->yosh = 30;
+
++++++
+
+Quyidagi kod natijasini toping. let obj = {ism: "Ali", yosh: 25}; delete obj.yosh; console.log(obj.yosh);
+====
+25
+====
+#undefined
+====
+null
+====
+Error
+
++++++
+
+Quyidagi kodda xatolik bormi? let obj = { ism: "Ali", yosh: 25 }; console.log(obj[ism]);
+====
+#Ha, ism o‘zgaruvchi sifatida qabul qilinmoqda
+====
+Yo‘q, kod to‘g‘ri ishlaydi
+====
+ism noto‘g‘ri o‘zgaruvchi e’lon qilingan
+====
+Xatolik console.log'da emas, object deklaratsiyasida
+
++++++
+
+JavaScriptda ob'ektning barcha kalitlarini olish uchun qaysi metod ishlatiladi?
+====
+#Object.keys(obj)
+====
+Object.getKeys(obj)
+====
+Object.values(obj)
+====
+Object.entries(obj)
+
++++++
+
+Object.entries(obj) metodi nima qaytaradi?
+====
+#Kalit-qiymat juftliklarini massiv shaklida
+====
+Faqat kalitlarni massiv shaklida
+====
+Faqat qiymatlarni massiv shaklida
+====
+Kalitlarning uzunligini
+
++++++
+
+Quyidagi kod qaysi metoddan foydalanadi? Object.assign(obj1, obj2);
+====
+#Ob'ektni nusxalash
+====
+Ob'ektni yo‘q qilish
+====
+Ob'ektni massivga aylantirish
+====
+Yangi ob'ekt yaratish
+
++++++
+
+Ob'ekt ichidagi funksiya nima deb ataladi?
+====
+Funksiya
+====
+Konstruktor
+====
+#Metod
+====
+O‘zgaruvchi
+
++++++
+
+Quyidagi kod natijasini toping. let obj = { ism: "Ali", yosh: 25, salom: function() { return "Salom, " + this.ism; } }; console.log(obj.salom());
+====
+#"Salom, Ali"
+====
+"Salom, undefined"
+====
+"Salom, ism"
+====
+Error
+
++++++
+
+Object ichida boshqa Object bo‘lsa, qanday murojaat qilinadi? let obj = { kurs: { nomi: "JavaScript", davomiylik: "3 oy" } }; console.log(obj.kurs.nomi);
+====
+#"JavaScript"
+====
+undefined
+====
+"kurs"
+====
+Error
+
++++++
+
+Quyidagi kod nimani anglatadi? let obj = {}; console.log(Object.keys(obj).length);
+====
+#0
+====
+1
+====
+undefined
+====
+Error
+
++++++
+
+Quyidagi kod nimani anglatadi? let obj = { ism: "Ali", yosh: 25 }; let yangiObj = obj; yangiObj.yosh = 30; console.log(obj.yosh);
+====
+#30
+====
+25
+====
+undefined
+====
+Error
+
++++++
+
+Destrukturizatsiya nima?
+====
+Ma’lumotlarni kriptografik shifrlash usuli
+====
+#Obyekt yoki massiv elementlarini alohida o‘zgaruvchilarga ajratish usuli
+====
+Ma’lumotlarni serverga yuborish usuli
+====
+JSON ma’lumotlarini o‘qish usuli
+
++++++
+
+Quyidagi destrukturizatsiya kodining natijasi qanday bo‘ladi? const [a, b] = [10, 20]; console.log(a, b);
+====
+#10 20
+====
+[10, 20]
+====
+undefined
+====
+Error
+
++++++
+
+Obyektni destrukturizatsiya qilishda noto‘g‘ri usul qaysi?
+====
+const { ism, yosh } = user;
+====
+const ism = user.ism; const yosh = user.yosh;
+====
+#const [ism, yosh] = user;
+====
+const { ism, yosh } = { ism: "Ali", yosh: 25 };
+
++++++
+
+Sana va vaqt bilan ishlash uchun qaysi obyekt ishlatiladi?
+====
+Time
+====
+Clock
+====
+#Date
+====
+Moment
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? const hozirgiSana = new Date(2025, 2, 8); console.log(hozirgiSana.getMonth());
+====
+3
+====
+#2
+====
+8
+====
+2025
+
++++++
+
+getFullYear() metodi nima uchun ishlatiladi?
+====
+#To‘liq yilni olish uchun
+====
+Oyning raqamini olish uchun
+====
+Hozirgi vaqtni olish uchun
+====
+JSON obyektini yaratish uchun
+
++++++
+
+toISOString() metodining vazifasi nima?
+====
+JSON formatga o‘tkazish
+====
+#Sanani ISO standarti bo‘yicha formatlash
+====
+Milliy sanani formatlash
+====
+Ob'ektni JSON matn shakliga o‘tkazish
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? const sana = new Date(2025, 0, 1); console.log(sana.getDate());
+====
+0
+====
+#1
+====
+2025
+====
+31
+
++++++
+
+JSON nima?
+====
+Veb sahifalarni yaratish tili
+====
+#Ma’lumotlarni saqlash va almashish formati
+====
+JavaScript-ning yangi sintaksisi
+====
+XML muqobili
+
++++++
+
+JSON ma’lumotlarini obyektga o‘tkazish uchun qaysi metod ishlatiladi?
+====
+JSON.stringify()
+====
+#JSON.parse()
+====
+JSON.toObject()
+====
+JSON.decode()
+
++++++
+
+JSON.stringify() nimani bajaradi?
+====
+#Obyektni JSON matn ko‘rinishiga aylantiradi
+====
+JSON matnni obyektga aylantiradi
+====
+JSON kodni tekshiradi
+====
+Obyektni massivga aylantiradi
+
++++++
+
+Quyidagi JSON matnini obyektga o‘tkazish uchun to‘g‘ri kodni toping. '{"ism": "Ali", "yosh": 30}'
+====
+JSON.stringify(data)
+====
+JSON.decode(data)
+====
+#JSON.parse(data)
+====
+data.toObject()
+
++++++
+
+toJSON metodi qaysi obyektga tegishli?
+====
+Array
+====
+#Date
+====
+Math
+====
+String
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? const sanaObj = { vaqt: new Date() }; console.log(JSON.stringify(sanaObj));
+====
+#{"vaqt":"2025-03-08T12:34:56.789Z"}
+====
+{"vaqt":Date}
+====
+{"vaqt": new Date()}
+====
+Error
+
++++++
+
+Date obyektini JSON formatiga o‘tkazish qaysi usul orqali amalga oshiriladi?
+====
+#date.toJSON()
+====
+date.parse()
+====
+date.stringify()
+====
+date.format()
+
++++++
+
+setTimeout funksiyasi nima qiladi?
+====
+Funksiyani darhol ishga tushiradi.
+====
+#Funksiyani ma’lum vaqt kechikish bilan ishga tushiradi.
+====
+Funksiyani takroran bajaradi.
+====
+Funksiyani to‘xtatadi.
+
++++++
+
+setInterval funksiyasining asosiy vazifasi nima?
+====
+Funksiyani faqat bir marta bajaradi.
+====
+Funksiyani ma’lum vaqt kechikish bilan bajaradi.
+====
+#Funksiyani ma’lum vaqt oraliqlarida takrorlaydi.
+====
+Funksiyani to‘xtatadi.
+
++++++
+
+setTimeout funksiyasini bekor qilish uchun qaysi metod ishlatiladi?
+====
+clearInterval()
+====
+#clearTimeout()
+====
+stopTimeout()
+====
+cancelTimeout()
+
++++++
+
+setInterval funksiyasini to‘xtatish uchun qaysi metod ishlatiladi?
+====
+stopInterval()
+====
+clearTimeout()
+====
+#clearInterval()
+====
+cancelInterval()
+
++++++
+
+JavaScript'dagi Promise obyektining asosiy maqsadi nima?
+====
+Ma’lumotlarni saqlash.
+====
+#Asinxron operatsiyalarni boshqarish.
+====
+Obyekt yaratish.
+====
+Funksiya chaqirish.
+
++++++
+
+Promise obyektining qanday holatlari mavjud?
+====
+waiting, completed, failed
+====
+start, process, end
+====
+#pending, fulfilled, rejected
+====
+run, stop, error
+
++++++
+
+Promise.all() nima uchun ishlatiladi?
+====
+Eng tez bajarilgan Promise ning natijasini qaytaradi.
+====
+#Berilgan barcha Promise lar bajarilgandan keyin natijalarni qaytaradi.
+====
+Faqat birinchi bajarilgan Promise natijasini qaytaradi.
+====
+Eng sekin bajarilgan Promise ni qaytaradi.
+
++++++
+
+Promise.race() qanday ishlaydi?
+====
+#Eng tez bajarilgan Promise ning natijasini qaytaradi.
+====
+Eng sekin bajarilgan Promise ning natijasini qaytaradi.
+====
+Faqat birinchi bajarilgan Promise ni qaytaradi.
+====
+Hammasi bajarilmaguncha kutadi.
+
++++++
+
+async kalit so‘zi qanday vazifani bajaradi?
+====
+Funksiyani sinxron qiladi.
+====
+#Funksiyani asinxron qilish uchun ishlatiladi.
+====
+Funksiyani bloklaydi.
+====
+Funksiyani o‘chiradi.
+
++++++
+
+await qanday ishlaydi?
+====
+Sinxron kodni asinxron kodga aylantiradi.
+====
+#Promise bajarilguncha kutadi.
+====
+Kodni bloklaydi.
+====
+Funksiyani chaqiradi.
+
++++++
+
+Quyidagi kod natijasini toping: console.log("1"); setTimeout(() => console.log("2"), 1000); console.log("3");
+====
+#1 3 2
+====
+1 2 3
+====
+3 1 2
+====
+2 1 3
+
++++++
+
+Quyidagi kod natijasini toping: async function test() { console.log("A"); await new Promise(resolve => setTimeout(resolve, 2000)); console.log("B"); } test(); console.log("C");
+====
+#A C B
+====
+A B C
+====
+C A B
+====
+B C A
+
++++++
+
+Promise.reject() nima qiladi?
+====
+Promise ni muvaffaqiyatli bajarilgan deb belgilaydi.
+====
+#Promise ni bajarish jarayonida xato yuzaga keltiradi.
+====
+Promise ni kechiktiradi.
+====
+Promise ni to‘xtatadi.
+
++++++
+
+Promise.allSettled() qanday ishlaydi?
+====
+Faqat muvaffaqiyatli Promise larni qaytaradi.
+====
+Faqat muvaffaqiyatsiz Promise larni qaytaradi.
+====
+#Barcha Promise lar natijasini, ularning holati bilan birga qaytaradi.
+====
+Eng tez bajarilgan Promise ni qaytaradi.
+
++++++
+
+Promise.finally() qanday ishlaydi?
+====
+Faqat muvaffaqiyatli Promise bajargandan keyin ishlaydi.
+====
+Faqat muvaffaqiyatsiz Promise bajargandan keyin ishlaydi.
+====
+#Promise natijasidan qat'i nazar, har doim ishlaydi.
+====
+Promise ni to‘xtatadi.
+
++++++
+
+JavaScriptda iterator nima?
+====
+Ma'lumotlarni qayta ishlash usuli
+====
+Biror siklni tezlashtirish usuli
+====
+#Ma'lumotlar ustida navbat bilan ishlash usuli
+====
+Kodni kompilyatsiya qilish usuli
+
++++++
+
+Assinxron iterator qanday farq qiladi?
+====
+U har doim istalgan kodga ishlov beradi
+====
+U faqat massivlar bilan ishlaydi
+====
+#U ma'lumotlarni vaqt bo‘yicha kechiktirib qaytaradi
+====
+U generatorlarga muqobil sifatida ishlatiladi
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? async function* asyncGenerator() { yield 1; yield 2; } (async () => { for await (let value of asyncGenerator()) { console.log(value); } })();
+====
+#1 2
+====
+undefined
+====
+[1,2]
+====
+Xatolik yuz beradi
+
++++++
+
+Generatorlarda yield operatori nima uchun ishlatiladi?
+====
+Obyekt yaratish uchun
+====
+#Ma'lumotni vaqtincha to‘xtatish va qayta boshlash uchun
+====
+JavaScriptni tezlashtirish uchun
+====
+Xatoliklarni qayta ishlash uchun
+
++++++
+
+Assinxron generatorlar qanday aniqlanadi?
+====
+function*
+====
+#async function*
+====
+function async*
+====
+function yield
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? function* generatorFunction() { yield 'Hello'; yield 'World'; } const gen = generatorFunction(); console.log(gen.next().value);
+====
+#Hello
+====
+World
+====
+Undefined
+====
+Xatolik yuz beradi
+
++++++
+
+Assinxron generatorlardan qachon foydalaniladi?
+====
+Oddiy iteratorlar ishlamasa
+====
+#Vaqt bo‘yicha kechiktirilgan ma'lumotlarni qayta ishlashda
+====
+Faqat massivlar bilan ishlashda
+====
+Hech qachon ishlatilmaydi
+
++++++
+
+Quyidagi kodning natijasi qanday bo‘ladi? const iterable = { [Symbol.iterator]: function () { let count = 0; return { next: function () { count++; if (count <= 2) return { value: count, done: false }; return { done: true }; } }; } }; for (let value of iterable) { console.log(value); }
+====
+#1 2
+====
+undefined
+====
+[1, 2]
+====
+Xatolik yuz beradi
+
++++++
+
+Assinxron iterator qanday belgilanadi?
+====
+Symbol.iterator
+====
+#Symbol.asyncIterator
+====
+async function*
+====
+function*
+
++++++
+
+try...catch blokining maqsadi nima?
+====
+Kodni optimallashtirish
+====
+#Kodni xatoliklardan himoya qilish
+====
+JavaScript kompilyatorini chaqirish
+====
+Iteratsiya jarayonini tezlashtirish
+
++++++
+
+for await...of qanday ishlaydi?
+====
+Oddiy massivlar bilan ishlaydi
+====
+#Assinxron iteratorlarni navbat bilan bajaradi
+====
+Har qanday obyektlar bilan ishlaydi
+====
+Generatorlarni sinxron tarzda bajaradi
+
++++++
+
+try...catch qanday ishlaydi?
+====
+#try blokidagi xatolarni ushlaydi va catch blokiga yo‘naltiradi
+====
+Kodni tezlashtiradi
+====
+Assinxron iteratsiyalarni bajaradi
+====
+Generatorlar bilan ishlaydi
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? try { throw new Error('Xatolik'); } catch (e) { console.log(e.message); }
+====
+#Xatolik
+====
+Undefined
+====
+[]
+====
+Xatolik yuz beradi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? async function fetchData() { try { let response = await fetch('https://jsonplaceholder.typicode.com/posts/1'); let data = await response.json(); console.log(data); } catch (error) { console.error('Xatolik:', error.message); } } fetchData();
+====
+#JSON ma'lumot
+====
+Undefined
+====
+Xatolik yuz beradi
+====
+Null
+
++++++
+
+yield va await orasidagi asosiy farq nima?
+====
+#yield sinxron generatorlarda ishlaydi, await esa assinxron kodda
+====
+yield har qanday funksiyada ishlaydi
+====
+await generatorlarda ishlaydi
+====
+yield faqat massivlar bilan ishlaydi
+
++++++
+
+JavaScriptda sinflar qanday kalit so‘z yordamida yaratiladi?
+====
+object
+====
+function
+====
+#class
+====
+new
+
++++++
+
+JavaScriptda sinfdan obyekt yaratish uchun qaysi kalit so‘z ishlatiladi?
+====
+create
+====
+object
+====
+#new
+====
+make
+
++++++
+
+Quyidagi kod natijasida nima hosil bo‘ladi? class Car { constructor(brand) { this.brand = brand; } } const myCar = new Car("Toyota"); console.log(myCar.brand);
+====
+#Toyota
+====
+Car
+====
+undefined
+====
+null
+
++++++
+
+Sinfda obyektga boshlang‘ich qiymat beruvchi maxsus metod qanday nomlanadi?
+====
+initialize
+====
+setup
+====
+#constructor
+====
+create
+
++++++
+
+JavaScript sinflari qaysi versiyada paydo bo‘lgan?
+====
+ES5
+====
+#ES6
+====
+ES7
+====
+ES8
+
++++++
+
+Qaysi kod JavaScriptda meros olishni to‘g‘ri ko‘rsatadi?
+====
+class Student inherit Person {}
+====
+#class Student extends Person {}
+====
+class Student derives Person {}
+====
+class Student clone Person {}
+
++++++
+
+Getter metod qanday ishlaydi?
+====
+#Obyekt xususiyatlarini o‘qishga imkon beradi
+====
+Obyekt xususiyatlarini o‘zgartirish uchun ishlatiladi
+====
+Faqat private o‘zgaruvchilarni yaratadi
+====
+Faqat funksiya yaratish uchun ishlatiladi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? class Car { constructor(brand) { this.brand = brand; } get info() { return `Mening mashinam ${this.brand}`; } } const myCar = new Car("BMW"); console.log(myCar.info);
+====
+#Mening mashinam BMW
+====
+info() xatolik beradi
+====
+undefined
+====
+Mening mashinam undefined
+
++++++
+
+Setter metod qanday ishlaydi?
+====
+Yangi obyekt yaratadi
+====
+Obyekt xususiyatlarini o‘qish uchun ishlatiladi
+====
+#Obyekt xususiyatlarini o‘rnatish yoki o‘zgartirish uchun ishlatiladi
+====
+Obyektga yangi metod qo‘shadi
+
++++++
+
+Quyidagi kodda setter metod qanday ishlaydi? class Car { constructor(brand) { this._brand = brand; } set brand(newBrand) { this._brand = newBrand.toUpperCase(); } get brand() { return this._brand; } } const myCar = new Car("Toyota"); myCar.brand = "bmw"; console.log(myCar.brand);
+====
+bmw
+====
+#BMW
+====
+toyota
+====
+Toyota
+
++++++
+
+Obyektning xususiyatlarini tashqaridan to‘g‘ridan-to‘g‘ri o‘zgartirishni oldini olish uchun qaysi usul ishlatiladi?
+====
+#Getter va Setter metodlari
+====
+Constructor metod
+====
+Static metod
+====
+Global o‘zgaruvchi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? class Animal { constructor(name) { this.name = name; } } class Dog extends Animal {} const myDog = new Dog("Rex"); console.log(myDog.name);
+====
+undefined
+====
+null
+====
+#Rex
+====
+Xatolik chiqaradi
+
++++++
+
+Meros oluvchi sinf qaysi kalit so‘z orqali ota sinfning constructor metodini chaqiradi?
+====
+base
+====
+#super
+====
+parent
+====
+extends
+
++++++
+
+Quyidagi kod natijasida nima hosil bo‘ladi? class Parent { sayHello() { return "Hello from Parent"; } } class Child extends Parent {} const child = new Child(); console.log(child.sayHello());
+====
+#Hello from Parent
+====
+undefined
+====
+Xatolik beradi
+====
+Hello from Child
+
++++++
+
+Static metodlardan qanday foydalaniladi?
+====
+Obyekt orqali chaqiriladi
+====
+#Sinf nomi orqali chaqiriladi
+====
+Faqat constructor ichida ishlatiladi
+====
+Faqat getter va setterlar orqali ishlatiladi
+
++++++
+
+call metodi qanday ishlaydi?
+====
+Funksiyani yangi obyekt yaratish orqali chaqiradi
+====
+#Funksiyani aniq obyekt konteksti bilan chaqiradi
+====
+Funksiyani massiv ichidagi argumentlar bilan chaqiradi
+====
+Funksiya yaratishda ishlatiladi
+
++++++
+
+apply metodi qanday farqlanadi?
+====
+U funksiyani yangi obyekt ichida chaqiradi
+====
+#U call metodiga o‘xshash, lekin argumentlarni massiv sifatida qabul qiladi
+====
+U yangi obyekt yaratadi
+====
+U funksiyalarni avtomatik chaqiradi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? function greet(name) { console.log("Salom, " + name + "! Men " + this.language + " dasturchisiman."); } const dev = { language: "JavaScript" }; greet.call(dev, "Ali");
+====
+#Salom, Ali! Men JavaScript dasturchisiman.
+====
+Salom, undefined! Men undefined dasturchisiman.
+====
+Xatolik yuz beradi
+====
+Salom, Ali! Men dasturchisiman.
+
++++++
+
+apply metodi qanday argumentlar qabul qiladi?
+====
+Obyekt va string
+====
+#Obyekt va massiv
+====
+Obyekt va funksiya
+====
+Faqat obyekt
+
++++++
+
+JavaScriptda obyekt qanday prototip orqali meros oladi?
+====
+Object.extend()
+====
+#Object.create()
+====
+Object.prototip()
+====
+Object.mirror()
+
++++++
+
+Prototip nima?
+====
+Obyekt yaratish uchun yangi metod
+====
+#JavaScriptda meros olishni ta'minlovchi mexanizm
+====
+Funksiya yaratish usuli
+====
+Obyektni yo‘q qilish usuli
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? function Person(name) { this.name = name; } Person.prototype.sayHello = function() { return "Salom, " + this.name; }; const p1 = new Person("Ali"); console.log(p1.sayHello());
+====
+Salom, undefined
+====
+#Salom, Ali
+====
+Xatolik yuz beradi
+====
+Hello, Ali
+
++++++
+
+Object.create() metodi qanday ishlaydi?
+====
+#Yangi obyekt yaratadi va uni mavjud obyektga bog‘laydi
+====
+Yangi obyektni xususiyatlar bilan to‘ldiradi
+====
+Yangi obyektni funksiya ichida yaratadi
+====
+Obyektga yangi metod qo‘shadi
+
++++++
+
+JavaScriptda prototip zanjiri qanday ishlaydi?
+====
+#Har bir obyekt o‘zining asosiy obyektidan metod va xususiyatlarni meros oladi
+====
+Obyektlarni nusxalash imkonini beradi
+====
+Obyekt ichida faqat metodlarni uzatadi
+====
+Obyekt ichida faqat xususiyatlarni uzatadi
+
++++++
+
+Quyidagi kod qanday natija qaytaradi? function Developer(name, lang) { this.name = name; this.lang = lang; } Developer.prototype.code = function() { return this.name + " " + this.lang + " da kod yozmoqda"; }; const dev1 = new Developer("Ali", "JavaScript"); console.log(dev1.code());
+====
+#Ali JavaScript da kod yozmoqda
+====
+Undefined undefined da kod yozmoqda
+====
+Xatolik yuz beradi
+====
+Ali da kod yozmoqda
+
++++++
+
+JavaScript obyektga yo‘naltirilgan dasturlash qaysi elementlarga asoslanadi?
+====
+#Prototiplar va meros olish
+====
+Funksiyalar va massivlar
+====
+Xatolar va obyektlar
+====
+DOM va BOM
+
++++++
+
+Prototip yordamida obyekt yaratishning afzalligi nima?
+====
+Har bir obyekt yangi xususiyatlarni yaratadi
+====
+#Kodni qayta ishlatish va samaradorlikni oshirish
+====
+Har bir obyekt o‘z metodlarini saqlaydi
+====
+Kodni qisqartirish
+
++++++
+
+Prototip metodlari qanday chaqiriladi?
+====
+Funksiya ichida qayta ishlatish orqali
+====
+this kalit so‘zi orqali
+====
+#prototype orqali obyektlarga bog‘lash
+====
+Direkt chaqiriladi
+
++++++
+
+Meros olish uchun qaysi metod ishlatiladi?
+====
+Object.assign()
+====
+#Object.create()
+====
+Function.prototype
+====
+Array.prototype
+
++++++
+
+Quyidagi kod natijasi qanday bo‘ladi? function Animal(name) { this.name = name; } Animal.prototype.speak = function() { return this.name + " ovoz chiqarmoqda"; }; const dog = new Animal("It"); console.log(dog.speak());
+====
+#It ovoz chiqarmoqda
+====
+Xatolik yuz beradi
+====
+Undefined ovoz chiqarmoqda
+====
+Hech narsa chiqarmaydi
