@@ -319,9 +319,22 @@ async def send_quiz_question(chat_id: int, state: FSMContext):
     user_data[user_id]["used_questions"].append(question_idx)
     question = QUESTIONS[question_idx]
     
+    # Random rejimda javob variantlarini aralashtirish
+    options = question["options"].copy()  # Asl ro‘yxatni o‘zgartirmaslik uchun nusxa olamiz
+    correct_answer = options[question["correct"]]  # To‘g‘ri javobni saqlab qo‘yamiz
+    if user_data[user_id]["mode"] == "Random":
+        indices = list(range(len(options)))  # Variantlar indekslari
+        random.shuffle(indices)  # Indekslarni tasodifiy aralashtiramiz
+        # Yangi tartibda variantlarni joylashtiramiz
+        shuffled_options = [options[i] for i in indices]
+        # To‘g‘ri javobning yangi indeksini aniqlaymiz
+        new_correct_index = indices.index(question["correct"])
+        options = shuffled_options
+        question["correct"] = new_correct_index
+    
     # Savol va variantlarni log qilish
     logger.info(f"Savol yuborilmoqda (user_id={user_id}, mode={user_data[user_id]['mode']}, idx={question_idx}): {question['question']}")
-    logger.info(f"Variantlar: {question['options']}")
+    logger.info(f"Variantlar: {options}")
     
     user_data[user_id]["question_count"] += 1
     user_data[user_id]["active_poll"] = question
@@ -336,12 +349,12 @@ async def send_quiz_question(chat_id: int, state: FSMContext):
         poll = await bot.send_poll(
             chat_id=chat_id,
             question=f"❓ Savol {user_data[user_id]['question_count']}/{max_questions}: {question['question']}",
-            options=question["options"],
+            options=options,  # Aralashtirilgan variantlar
             type="quiz",
-            correct_option_id=question["correct"],
+            correct_option_id=question["correct"],  # Yangi to‘g‘ri indeks
             is_anonymous=False,
             open_period=user_data[user_id]["time_limit"],
-            explanation=f"✅ To‘g‘ri javob: {question['options'][question['correct']]}"
+            explanation=f"✅ To‘g‘ri javob: {correct_answer}"  # To‘g‘ri javobni ko‘rsatish
         )
         user_data[user_id]["poll_id"] = poll.poll.id
         user_data[user_id]["poll_message_id"] = poll.message_id
