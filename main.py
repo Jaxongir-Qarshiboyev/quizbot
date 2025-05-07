@@ -534,7 +534,7 @@ async def on_shutdown(_):
     await bot.session.close()
     logger.info("Webhook deleted and session closed")
 
-async def main():
+def main():
     # Webhook serverini sozlash
     app = web.Application()
     webhook_requests_handler = SimpleRequestHandler(
@@ -550,7 +550,7 @@ async def main():
     dp.shutdown.register(on_shutdown)
     
     # Serverni ishga tushirish
-    await web.run_app(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
+    web.run_app(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
 
 if __name__ == "__main__":
-    asyncio.run(main())  # To‘g‘ri ishga tushirish
+    main()  # asyncio.run ni olib tashladik, chunki web.run_app o‘z event loop’ni boshqaradi
