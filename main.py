@@ -522,13 +522,13 @@ async def cancel_command(message: types.Message, state: FSMContext):
     )
     await state.clear()
 
-async def on_startup(_):
+async def on_startup():
     # Webhook o'rnatish
     webhook_url = f"{os.getenv('WEBHOOK_HOST')}/webhook/{BOT_TOKEN}"
     await bot.set_webhook(webhook_url)
     logger.info(f"Webhook set to {webhook_url}")
 
-async def on_shutdown(_):
+async def on_shutdown():
     # Webhookni o'chirish
     await bot.delete_webhook()
     await bot.session.close()
